@@ -23,6 +23,11 @@ import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
 import headerImage from "assets/img/Hacktober/Banner.png";
 import iotlabLogo from "assets/img/Hacktober/logoiot.png"
+import { List,ListItem } from "@material-ui/core";
+
+import mark from "assets/img/Hacktober/mark.png"
+
+import "./loginpage.css"
 
 const useStyles = makeStyles(styles);
 
@@ -40,7 +45,14 @@ export default function LoginPage(props) {
         color="transparent"
         brand="Open Source FTW 2020"
         rightLinks={<HeaderLinks />}
-        leftLinks={<div style={{backgroundImage:`url(${iotlabLogo})`}}> </div>}
+        leftLinks={<List>
+          <ListItem>
+          <div className={classes.navLink} >
+            <img src={iotlabLogo} className="iotlablogo"></img>
+          </div>
+          </ListItem>
+        </List>}
+
         {...rest}
       />
       <div
@@ -61,7 +73,7 @@ export default function LoginPage(props) {
                   </CardHeader>
                   <CardBody>
                     <CustomInput
-                      labelText="First Name..."
+                      labelText="Name..."
                       id="first"
                       formControlProps={{
                         fullWidth: true
@@ -86,6 +98,21 @@ export default function LoginPage(props) {
                         endAdornment: (
                           <InputAdornment position="end">
                             <Email className={classes.inputIconsColor} />
+                          </InputAdornment>
+                        )
+                      }}
+                    />
+                    <CustomInput
+                      labelText="Github Id (if you have any)"
+                      id="github"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        type: "text",
+                        endAdornment: (
+                          <InputAdornment position="end">
+                            <img src={mark} style={{height:20,width:20}}></img>
                           </InputAdornment>
                         )
                       }}
