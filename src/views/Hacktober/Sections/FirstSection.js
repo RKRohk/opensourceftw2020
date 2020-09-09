@@ -51,7 +51,9 @@ export default function ProductSection(props) {
               vertical
             />
             <Button startIcon={<GitHub></GitHub>}>
+              <a href="https://www.github.com/orgs/iot-lab-kiit">
               Github
+              </a>
             </Button>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
@@ -63,7 +65,7 @@ export default function ProductSection(props) {
               vertical
             />
             <Button>
-              <a>
+              <a href="https://hacktoberfest.digitalocean.com/">
                 <img className="iconimage" src={HacktoberIcon}></img>
               </a>
             </Button>
@@ -76,7 +78,9 @@ export default function ProductSection(props) {
               vertical
             />
             <Button >
+              <a href="https://www.discord.com">
               <img className="iconimage" src={Discord}></img>
+              </a>
             </Button>
           </GridItem>
         </GridContainer>
