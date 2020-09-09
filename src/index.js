@@ -19,9 +19,10 @@ ReactDOM.render(
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path='/hacktober'component={Hacktober} />
-      <Route path="/" component={Components} />
+      <Route path="/register" exact={true} component={LoginPage} />
+      <Route path='/' exact={true} component={Hacktober} />
+
+      {/* <Route path="/" component={Components} /> */}
     </Switch>
   </Router>,
   document.getElementById("root")
