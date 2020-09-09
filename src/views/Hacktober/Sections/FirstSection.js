@@ -12,17 +12,25 @@ import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
-import { Button } from "@material-ui/core";
+import { Button, SvgIcon, Icon } from "@material-ui/core";
+import { GitHub, Forum, Public } from "@material-ui/icons";
+
+import Discord from "assets/img/Hacktober/Discord.png"
+
+import HacktoberIcon from "assets/img/Hacktober/Icon.png"
+
+import './firstsection.css'
+
 
 const useStyles = makeStyles(styles);
 
-export default function ProductSection() {
+export default function ProductSection(props) {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Let{"'"}s talk Open Source</h2>
           <h5 className={classes.description}>
             This is the paragraph where you can write more details about your
             product. Keep you user engaged by providing meaningful information.
@@ -36,30 +44,40 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
+              title="Our Github Profile"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
-              iconColor="info"
+              icon={GitHub}
+              iconColor="gray"
               vertical
             />
+            <Button startIcon={<GitHub></GitHub>}>
+              Github
+            </Button>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
+              title="Hacktoberfest"
+              description="Visit the official Hacktoberfest website for more details"
+              icon={Public}
+              iconColor="rose"
               vertical
             />
+            <Button>
+              <a>
+                <img className="iconimage" src={HacktoberIcon}></img>
+              </a>
+            </Button>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
+              title="Community"
+              description="Join our Discord Chatroom to be up to date with upcoming events and to interact with fellow participants"
+              icon={Forum}
               vertical
             />
+            <Button >
+              <img className="iconimage" src={Discord}></img>
+            </Button>
           </GridItem>
         </GridContainer>
       </div>

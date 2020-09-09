@@ -64,7 +64,7 @@ export default function LandingPage(props) {
         </div>
         <SectionCarousel />
       </div>
-      <Footer />
+     <Footer />
     </div>
   );
 }
