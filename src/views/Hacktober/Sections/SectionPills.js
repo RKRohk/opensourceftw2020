@@ -24,56 +24,41 @@ export default function SectionPills() {
     <div className={classes.section}>
       <div>
         <GridContainer>
-          <GridItem xs={10} sm={2} md={8} lg={6}>
-            <GridContainer>
-              <GridItem xs={10} sm={2} md={8} lg={6}>
-                <img
-                  style={{ width: '80%' }}
-                  src={image}
-                  alt="..."
-                  className={classes.imgRounded + " " + classes.image}
-                />
-              </GridItem>
-              <GridItem xs={10} sm={2} md={8} lg={6}>
-                <img
-                  style={{ width: '80%' }}
-                  src={iot}
-                  alt="..."
-                  className={classes.imgRounded + " " + classes.image}
-                />
-              </GridItem>
-            </GridContainer>
+          <GridItem xs={6} sm={6} md={2} lg={3} style={{ alignSelf: 'center', textAlign: 'center' }}>
+            <img
+              style={{ width: '80%' }}
+              src={image}
+              alt="..."
+              className={classes.imgRounded + " " + classes.image}
+            />
+          </GridItem>
+          <GridItem xs={6} sm={6} md={2} lg={3} style={{ alignSelf: 'center', textAlign: 'center' }}>
+            <img
+              style={{ width: '80%' }}
+              src={iot}
+              alt="..."
+              className={classes.imgRounded + " " + classes.image}
+            />
           </GridItem>
           <GridItem xs={12} sm={12} md={8} lg={6}>
             <NavPills
               color="rose"
               tabs={[
                 {
-                  tabButton: "Dashboard",
+                  tabButton: "Events",
                   tabIcon: Dashboard,
                   tabContent: (
                     <span style={{ color: "black" }}>
-                      <p>
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
-                        </p>
                       <br />
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively
-                        administrate empowered markets via plug-and-play
-                        networks. Dynamically procrastinate B2C users after
-                        installed base benefits.
-                        </p>
-                      <br />
+                        <h4>Given the severe impact of the global pandemic on all of our communities, we are organising a Hacktoberfest meetups this year that will happen online!!</h4>
+                      </p>
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively
-                        administrate empowered markets via plug-and-play
-                        networks. Dynamically procrastinate B2C users after
-                        installed base benefits.
-                        </p>
+                        <h4>Attending an online Hacktoberfest event is a great way to engage with and support the open source community despite the challenges we’re all facing.</h4>
+                      </p>
+                      <p>
+                        <h4>Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2020 challenge and earn a limited edition T-shirt</h4>
+                      </p>
                     </span>
                   )
                 },
@@ -82,49 +67,26 @@ export default function SectionPills() {
                   tabIcon: Schedule,
                   tabContent: (
                     <span style={{ color: "black" }}>
-                      <p>
-                        Efficiently unleash cross-media information without
-                        cross-media value. Quickly maximize timely
-                        deliverables for real-time schemas.
-                        </p>
                       <br />
                       <p>
-                        Dramatically maintain clicks-and-mortar solutions
-                        without functional solutions. Dramatically visualize
-                        customer directed convergence without revolutionary
-                        ROI. Collaboratively administrate empowered markets
-                        via plug-and-play networks. Dynamically procrastinate
-                        B2C users after installed base benefits.
-                        </p>
+                        <h4>Our Online event will happen on 3<sup>rd</sup> and 4<sup>th</sup> October.</h4>
+                      </p>
+                      <p>
+                        <h4>Other event details will follow soon.</h4>
+                      </p>
+                      <br />
                     </span>
                   )
                 },
                 {
-                  tabButton: "Tasks",
+                  tabButton: "Links",
                   tabIcon: List,
                   tabContent: (
                     <span style={{ color: "black" }}>
                       <p>
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
+                        <h4>Links to the online events will be shared soon.</h4>
                         </p>
                       <br />
-                      <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively
-                        administrate empowered markets via plug-and-play
-                        networks. Dynamically procrastinate B2C users after
-                        installed base benefits.
-                        </p>
-                      <br />
-                      <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively
-                        administrate empowered markets via plug-and-play
-                        networks. Dynamically procrastinate B2C users after
-                        installed base benefits.
-                        </p>
                     </span>
                   )
                 }

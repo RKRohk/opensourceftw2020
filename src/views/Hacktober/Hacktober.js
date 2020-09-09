@@ -33,7 +33,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="HacktoberFest 2020"
+        brand="Open Source FTW 2020"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -49,7 +49,8 @@ export default function LandingPage(props) {
             <h1 className={classes.title}>OPEN SOURCE <br/>FTW 2020</h1>
               <br />
               <div className={classes.typo}>
-                <h5>Hacktoberfest is a monthlong celebration of open source software run by DigitalOcean. Hacktoberfest is open to everyone in our global community! Four quality pull requests must be submitted to public GitHub repositories. You can sign up anytime between October 1 and October 31.</h5>
+                <h3>Open source is changing the world <br /><span style={{color:'#e91e63'}}>-One pull request at a time.</span></h3>
+                <h3>Event hosted by -<span style={{color:'#e91e63'}}> IOT LAB KIIT</span></h3>
               </div>
             </GridItem>
           </GridContainer>

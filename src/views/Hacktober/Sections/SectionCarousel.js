@@ -10,9 +10,9 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+import image1 from "assets/img/Hacktober/swipe1.png";
+import image2 from "assets/img/Hacktober/swipe2.jpg";
+import image3 from "assets/img/Hacktober/swipe3.png";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -37,12 +37,6 @@ export default function SectionCarousel() {
               <Carousel {...settings}>
                 <div>
                   <img src={image1} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
                 </div>
                 <div>
                   <img
@@ -53,7 +47,7 @@ export default function SectionCarousel() {
                   <div className="slick-caption">
                     <h4>
                       <LocationOn className="slick-icons" />
-                      Somewhere Beyond, United States
+                      2019 Official Hacktober Merch.
                     </h4>
                   </div>
                 </div>
