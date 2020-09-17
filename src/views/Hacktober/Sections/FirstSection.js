@@ -11,7 +11,6 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 import { Button } from "@material-ui/core";
 import { GitHub, Forum, Public } from "@material-ui/icons";
-
 import Discord from "assets/img/Hacktober/Discord.png"
 
 import HacktoberIcon from "assets/img/Hacktober/Icon.png"
@@ -44,7 +43,7 @@ export default function ProductSection(props) {
               vertical
             />
             <Button >
-              <a href="https://www.github.com/orgs/iot-lab-kiit">
+              <a href="https://www.github.com/orgs/iot-lab-kiit"  rel="noopener noreferrer" target="_blank">
               <img className="iconimage" src={GithubIcon} alt=""></img>
               </a>
             </Button>
@@ -58,7 +57,7 @@ export default function ProductSection(props) {
               vertical
             />
             <Button>
-              <a href="https://hacktoberfest.digitalocean.com/">
+              <a href="https://hacktoberfest.digitalocean.com/"  rel="noopener noreferrer" target="_blank">
                 <img className="iconimage" src={HacktoberIcon} alt=""></img>
               </a>
             </Button>
@@ -66,12 +65,12 @@ export default function ProductSection(props) {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Community"
-              description=" Whether you’re new to development, a student, long-time contributor,you can join our Discord Chatroom to be up to date with upcoming events and to interact with fellow participants"
+              description=" Whether you’re new to development, a student, long-time contributor,you can join our Mattermost Chatroom to be up to date with upcoming events and to interact with fellow participants"
               icon={Forum}
               vertical
             />
             <Button >
-              <a href="https://discord.gg/VNxVwdR">
+              <a href="https://hacktoberfest.cloud.mattermost.com/main/channels/mlh-4302"  rel="noopener noreferrer" target="_blank">
               <img className="iconimage" src={Discord} alt=""></img>
               </a>
             </Button>

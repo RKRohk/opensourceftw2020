@@ -6,14 +6,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import Dashboard from "@material-ui/icons/Dashboard";
 import Schedule from "@material-ui/icons/Schedule";
 import List from "@material-ui/icons/List";
-
+import { Button } from "@material-ui/core";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 import image from "assets/img/Hacktober/Icon.png";
 import iot from "assets/img/Hacktober/logoiot.png";
-
+import YoutubeIcon from "assets/img/Hacktober/youtube.png"
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -67,14 +67,20 @@ export default function SectionPills() {
                   tabIcon: Schedule,
                   tabContent: (
                     <span style={{ color: "black" }}>
-                      <br />
+                      <p>On Sunday 4th Oct there will be a session on how to create a PR or for the new comers a good first commit. So even if someone just attend the session he/she'll be understand the basics of github and then can work upon the goal of 4 PRs for Hacktoberfest 2020.</p>
                       <p>
-                        <h4>Our Online event will happen on 3<sup>rd</sup> and 4<sup>th</sup> October.</h4>
+                        The event can be broken down into pieces as follow:
+                      <ul>
+                          <li><b>[4:00pm - 4:15pm]</b> &nbsp;Onboarding</li>
+                          <li><b>[4:15pm - 4:45pm]</b> &nbsp;What is Hacktoberfest and Open Source</li>
+                          <li><b>[4:45pm - 4:50pm]</b> &nbsp;Message by the CEO of Digital Ocean</li>
+                          <li><b>[4:50pm - 5:20pm]</b> &nbsp;Introduction to GitHub</li>
+                          <li><b>[5:20pm - 6:00pm]</b> &nbsp;How to create a PR (We'll setup a repo for this)</li>
+                          <li><b>[6:00pm - 6:30pm]</b> &nbsp;Doubts and Community Bonding</li>
+                        </ul>
                       </p>
                       <p>
-                        <h4>Other event details will follow soon.</h4>
-                      </p>
-                      <br />
+                        Apart from this we'll be having a telegram group for people to join and discuss as well as ask any doubts if they are stuck at any point.</p>
                     </span>
                   )
                 },
@@ -84,8 +90,12 @@ export default function SectionPills() {
                   tabContent: (
                     <span style={{ color: "black" }}>
                       <p>
-                        <h4>Links to the online events will be shared soon.</h4>
-                        </p>
+                        <h4>Links to the online events will be shared soon for youtube live.<br /><Button >
+              <a href="https://www.youtube.com/channel/UCNx77b1SpBySTzsQtfm9N9g">
+              <img className="iconimage" src={YoutubeIcon} alt=""></img>
+              </a>
+            </Button></h4>
+                      </p>
                       <br />
                     </span>
                   )

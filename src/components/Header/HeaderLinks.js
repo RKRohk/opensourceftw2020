@@ -27,30 +27,6 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          hoverColor="black"
-          buttonText="Quick Links"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="https://iotkiit.in" className={classes.dropdownLink}>
-              IOT Lab
-            </Link>,
-            <a
-              href="https://hacktoberfest.digitalocean.com/"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Hacktoberfest
-            </a>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Button
           color="transparent"
           href="https://www.instagram.com/iotkiit/"

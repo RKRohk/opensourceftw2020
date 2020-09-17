@@ -53,12 +53,6 @@ export default function SectionCarousel() {
                 </div>
                 <div>
                   <img src={image3} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    <h4>
-                      <LocationOn className="slick-icons" />
-                      Yellowstone National Park, United States
-                    </h4>
-                  </div>
                 </div>
               </Carousel>
             </Card>
