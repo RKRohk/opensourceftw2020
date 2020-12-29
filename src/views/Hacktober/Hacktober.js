@@ -13,7 +13,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-import Button from 'components/CustomButtons/Button.js';
+import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
@@ -25,6 +25,8 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
+const blueColor = "#5EB5F7";
+
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
@@ -33,12 +35,12 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Open Source FTW 2020"
+        brand="CodeMate"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: 'dark'
+          color: "dark",
         }}
         {...rest}
       />
@@ -46,14 +48,36 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-            <h2 className={classes.title}>OPEN SOURCE FTW <br/>HACKTOBERFEST 2020</h2>
+              <h1 className={classes.title}>
+                CodeMate <br />
+              </h1>
               <br />
               <div className={classes.typo}>
-                <h3>Open source is changing the world <br /><span style={{color:'#e91e63'}}>-One pull request at a time.</span></h3>
-                <h3>Event hosted by - &nbsp;<a href="https://iotkiit.in" rel="noopener noreferrer" target="_blank" style={{color:'#e91e63'}}><u>IOT LAB KIIT</u></a></h3>
-                <h5>Complete the 2020 challenge to earn limited edition T-shirt & Stickers.</h5>
-                <a href="https://organize.mlh.io/participants/events/4302-open-source-ftw-2020" rel="noopener noreferrer" target="_blank"><Button type="button" color="rose">Register Now</Button></a>
-                
+                <h3>
+                  Life is good, <br />
+                  But it can be better <br />
+                  <span style={{ color: "#5EB5F7" }} >- Max Lord.</span>
+                </h3>
+                <h3>
+                  Event hosted by - &nbsp;
+                  <a
+                    href="https://iotkiit.in"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    style={{ color: blueColor }}
+                  >
+                    <h4>IoT Lab KiiT</h4>
+                  </a>
+                </h3>
+                <a
+                  href="https://organize.mlh.io/participants/events/4302-open-source-ftw-2020"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button type="button" color="info">
+                    Register Now
+                  </Button>
+                </a>
               </div>
             </GridItem>
           </GridContainer>
@@ -68,7 +92,7 @@ export default function LandingPage(props) {
         </div>
         <SectionCarousel />
       </div>
-     <Footer />
-    </div>
+      <Footer />
+    </div> 
   );
 }

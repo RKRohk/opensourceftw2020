@@ -26,10 +26,11 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
     <div className={classes.section}>
+      <h2 style={{ textAlign: "center", fontWeight: "bold" }}>Our Sponsors</h2>
       <div className={classes.container}>
         <GridContainer>
           <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
